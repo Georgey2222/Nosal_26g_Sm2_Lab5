@@ -1,0 +1,39 @@
+:root
+{
+    --size:10px;
+}
+body
+{
+    background: linear-gradient(45deg,#4760b1,#80084a);
+    width:100%;
+    height:100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+button
+{
+    width:calc(var(--size)*45);
+    height:calc(var(--size)*30);
+    margin:calc(var(--size)*2);
+    background-color: bisque;
+    border-radius: 10%;
+    font-size: calc(var(--size)*4);
+    border:none;
+    box-shadow: 0px 0px calc(var(--size)*2) rgba(0,0,0,0.4);
+}
+button:hover
+{
+    box-shadow: 0px 0px calc(var(--size)*2.5) rgba(0,0,0,0.8);
+}
+button:active
+{
+    box-shadow: 0px 0px calc(var(--size)*3) rgba(0,0,0,1);
+}
+div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
