@@ -55,6 +55,7 @@ h1
 font-size: 2em;
 margin-top:calc(var(--size)*5);
 margin-bottom: calc(var(--size)*3);
+margin-left:calc(var(--size)*5.5);
 }
 #main
 {
