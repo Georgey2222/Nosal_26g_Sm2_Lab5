@@ -302,3 +302,14 @@ window.onload = function()
 })
 }
 }
+document.getElementById("checkout").addEventListener("click",function()
+{
+    alert("Ваше замовлення прийнято - з вами зв'яжеться менеджер");
+    document.querySelector("section").innerHTML="";
+                document.querySelector("section").appendChild(
+                    createelem("h1","","Cart","")
+                )
+                document.querySelector("section").appendChild(
+                    createelem("p","empty_massage","Your cart is empty","")
+                )
+})
