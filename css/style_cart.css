@@ -249,6 +249,14 @@ button > img
     padding-top:calc(var(--total)*0.5);
     padding-bottom: calc(var(--total)*0.5);
 }
+.checkout:hover
+{
+   box-shadow:0 0 var(--good) 0 rgba(0, 0, 255,0.8);
+   cursor: pointer;
+}
+.checkout:active
+{
+   
 .empty_massage
 {
     font-size: 2em;
