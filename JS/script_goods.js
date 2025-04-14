@@ -5,7 +5,7 @@ if(width!=document.documentElement.clientWidth || height!=document.documentEleme
 {
     width =document.documentElement.clientWidth;
     height = document.documentElement.clientHeight;
-    gorizontal_size=width/157;
+    gorizontal_size=width/167;
     vertical_size=100;
     document.documentElement.style.setProperty('--size',`${Math.min(gorizontal_size,vertical_size)}px`);
     size = Math.min(gorizontal_size,vertical_size);
