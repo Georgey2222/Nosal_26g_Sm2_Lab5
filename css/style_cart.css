@@ -256,7 +256,9 @@ button > img
 }
 .checkout:active
 {
-   
+   box-shadow:0 0 calc(var(--good)*1.5) 0 rgba(0, 0, 255,1);
+   cursor: pointer;
+}
 .empty_massage
 {
     font-size: 2em;
