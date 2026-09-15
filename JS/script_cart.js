@@ -270,8 +270,8 @@ window.onload = function()
         const tit = getSiblings(b.closest(".count"))[1].children[0].innerText
         a[0].innerText=Number(a[0].innerText)-1;
         getparameter(tit,"contity",getparameter(tit,"contity")-1);
-        localStorage.setItem("total-cost",localStorage.getItem("total-cost")-getparameter(tit,"price"));
-        document.getElementById("total_price").innerText="$"+(localStorage.getItem("total-cost"));
+        localStorage.setItem("total-cost",(localStorage.getItem("total-cost")-getparameter(tit,"price")).toFixed(2);
+        document.getElementById("total_price").innerText="$"+(localStorage.getItem("total-cost")).toFixed(2);
         if(a[0].innerText==0)
         {
             const parentelement = event.target.closest(".goods-container");
