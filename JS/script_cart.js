@@ -260,7 +260,7 @@ window.onload = function()
             const dopdop=getSiblings(dop)[0];
             dopdop.innerText ="$" + (Number(getparameter(tit,"price"))*Number(getparameter(tit,"contity"))).toFixed(2);
             document.getElementById("total_price").innerText="$"+(Number(localStorage.getItem("total-cost"))+Number(getparameter(tit,"price"))).toFixed(2);
-            localStorage.setItem("total-cost",Number(localStorage.getItem("total-cost"))+Number(getparameter(tit,"price")));
+            localStorage.setItem("total-cost",(Number(localStorage.getItem("total-cost"))+Number(getparameter(tit,"price"))).toFixed(2));
         }
     }
     if(event.target && (event.target.tagName.toLowerCase()==="button"&&event.target.innerText=="-"))
